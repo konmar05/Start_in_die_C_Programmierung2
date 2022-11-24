@@ -27,5 +27,11 @@ int main(void) {
     int gerundet;
     gerundet = (teil * 100 + ganzes / 2) / ganzes;
     printf("%d von %d entsprechen gerundet: %d %%\n", teil, ganzes, gerundet);
+
+    /*mit Nachkommastellen */
+    int mitKomma;
+    mitKomma = (teil * 100 * 100 + ganzes / 2) / ganzes;
+    printf("%d von %d entsprechen: %d.%02d %%\n", teil, ganzes, mitKomma / 100, mitKomma % 100);
+
     return 0;
 }
