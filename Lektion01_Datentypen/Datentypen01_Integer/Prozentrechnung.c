@@ -22,5 +22,10 @@ int main(void) {
     /* Ausgabe */
     prozent = teil * 100 / ganzes;
     printf("%d von %d entsprechen: %d %%\n", teil, ganzes, prozent);
+
+    /* runden */
+    int gerundet;
+    gerundet = (teil * 100 + ganzes / 2) / ganzes;
+    printf("%d von %d entsprechen gerundet: %d %%\n", teil, ganzes, gerundet);
     return 0;
 }
